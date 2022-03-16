@@ -190,12 +190,26 @@ header {
             color: #F2F2F2;
         }
 
+        &:hover {
+            background-color: #007A65;
+            box-shadow: 0px 4px 4px #007A65;
+        }
+
+        &:nth-child(2) {
+            background-color: #007A65;
+
+            &:hover {
+                background-color: #A68262;
+            }
+        }
+
     }
 
     &--smallLine {
         width: 220px;
         height: 1px;
         background-color: #A68262;
+        margin-bottom: 20px;
     }
 
 }
