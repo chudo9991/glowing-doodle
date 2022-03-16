@@ -202,6 +202,21 @@ header nav ul li .menu--link {
 .about .panfav {
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+.about .panfav--n1 {
+  position: absolute;
+  right: -15%;
+  top: 50%;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+  transform: rotate(90deg);
 }
 .about .panfav--text {
   width: calc(100% - 441px);
@@ -231,5 +246,55 @@ header nav ul li .menu--link {
   background-image: url("/images/mouse_2.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: bottom center;
+}
+.about .ksemdm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.about .ksemdm--n2 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+  position: absolute;
+  left: -15%;
+  top: 50%;
+  transform: rotate(270deg);
+}
+.about .ksemdm--text {
+  width: calc(100% - 544px);
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  color: #F2F2F2;
+}
+.about .ksemdm--text h1 {
+  text-align: left;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+}
+.about .ksemdm--text p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FFFFFF;
+  font-family: "Lato", sans-serif;
+}
+.about .ksemdm--image {
+  width: 544px;
+  height: 427px;
+  background-image: url("/images/mouse_1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
 }

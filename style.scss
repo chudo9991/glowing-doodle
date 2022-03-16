@@ -242,6 +242,22 @@ header {
     .panfav {
         display: flex;
         justify-content: space-between;   
+        position: relative;
+
+        &--n1 {
+            position: absolute;
+            right: -15%;
+            top: 50%;
+            font-family: 'Lato', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 36px;
+            text-align: center;
+            letter-spacing: 0.15em;
+            color: #FFFFFF;
+            transform: rotate(90deg);
+        }
 
         &--text {
             width: calc(100% - 441px);
@@ -274,8 +290,65 @@ header {
             background-image: url('/images/mouse_2.png');
             background-size: contain;
             background-repeat: no-repeat;
-            background-position: center center;
+            background-position: bottom center;
         }
     }
-}
 
+    .ksemdm {
+        display: flex;
+        justify-content: space-between;   
+        align-items: center;
+        position: relative;
+
+        &--n2 {
+            font-family: 'Lato', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 36px;
+            text-align: center;
+            letter-spacing: 0.15em;
+            color: #FFFFFF;
+            position: absolute;
+            left: -15%;
+            top: 50%;
+            transform: rotate(270deg);
+        }
+
+        &--text {
+            width: calc(100% - 544px);
+            text-align: left;
+            font-family: 'Lato', sans-serif;
+            font-style: normal;
+            color: $textcolor;
+            
+
+            h1 {   
+                text-align: left;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 36px;                
+                letter-spacing: 0.15em;                
+                color: #FFFFFF;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 36px;
+                color: #FFFFFF;
+                font-family: 'Lato', sans-serif;                
+            }
+        }
+
+        &--image {
+            width: 544px;
+            height: 427px;
+            background-image: url('/images/mouse_1.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right center;
+        }
+    }
+
+}
