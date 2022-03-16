@@ -4,7 +4,7 @@ body {
   color: #F2F2F2;
   font: normal 12px "Lato";
   background-image: url("/images/bg.png");
-  background-size: cover;
+  background-position: center top;
   background-repeat: repeat-y;
 }
 
@@ -17,6 +17,7 @@ body {
   width: 1200px;
   height: 1px;
   background-color: #F2F2F2;
+  margin: 40px 0;
 }
 
 header {
@@ -92,7 +93,7 @@ header nav ul li .menu--link {
 .hero--image {
   width: 568px;
   height: 375px;
-  background-image: url("images/devices.png");
+  background-image: url("/images/devices.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -179,4 +180,54 @@ header nav ul li .menu--link {
   height: 1px;
   background-color: #A68262;
   margin-bottom: 20px;
+}
+
+.about h1 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: left;
+  color: #F2F2F2;
+}
+.about p {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: #FFFFFF;
+}
+.about .panfav {
+  display: flex;
+  justify-content: space-between;
+}
+.about .panfav--text {
+  width: calc(100% - 441px);
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  color: #F2F2F2;
+  text-align: right;
+}
+.about .panfav--text h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 0.15em;
+  color: #FFFFFF;
+}
+.about .panfav--text p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+.about .panfav--image {
+  width: 568px;
+  height: 375px;
+  background-image: url("/images/mouse_2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
