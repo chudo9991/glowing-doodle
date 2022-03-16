@@ -12,12 +12,23 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+@media only screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
 
 .line {
   width: 1200px;
   height: 1px;
   background-color: #F2F2F2;
-  margin: 40px 0;
+  margin: 40px auto;
+}
+@media only screen and (max-width: 576px) {
+  .line {
+    width: 90%;
+    margin: 20px auto;
+  }
 }
 
 header {
@@ -25,14 +36,34 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 576px) {
+  header {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 576px) {
+  header .logo {
+    margin: 1vh auto;
+  }
+}
 header nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 576px) {
+  header nav ul {
+    flex-direction: column;
+  }
+}
 header nav ul li {
   list-style: none;
   margin: 4px 24px;
+}
+@media only screen and (max-width: 576px) {
+  header nav ul li {
+    margin: 1vh auto;
+  }
 }
 header nav ul li:last-child {
   background: #007A65;
@@ -60,11 +91,28 @@ header nav ul li .menu--link:hover {
   justify-content: space-between;
   padding: 192px 0 64px 0;
 }
+@media only screen and (max-width: 576px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
 .hero--text {
   width: calc(100% - 568px);
   font-family: "Lato", sans-serif;
   font-style: normal;
   color: #F2F2F2;
+}
+@media only screen and (max-width: 576px) {
+  .hero--text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .hero--text h1 {
   font-weight: 700;
@@ -101,6 +149,14 @@ header nav ul li .menu--link:hover {
   background-repeat: no-repeat;
   background-position: center center;
 }
+@media only screen and (max-width: 576px) {
+  .hero--image {
+    order: -2;
+    width: 100%;
+    height: 375px;
+    background-size: 90%;
+  }
+}
 
 .cardGroup h1 {
   text-align: right;
@@ -116,6 +172,12 @@ header nav ul li .menu--link:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+@media only screen and (max-width: 576px) {
+  .cardGroup--wrapper {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 .cardGroup--wrapper--inner {
   display: flex;
@@ -157,6 +219,11 @@ header nav ul li .menu--link:hover {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+}
+@media only screen and (max-width: 576px) {
+  .cardGroup--card {
+    margin-bottom: 3vh;
+  }
 }
 .cardGroup--card h2 {
   font-family: "Lato", sans-serif;
@@ -207,6 +274,15 @@ header nav ul li .menu--link:hover {
   justify-content: space-between;
   position: relative;
 }
+@media only screen and (max-width: 576px) {
+  .about .panfav {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
 .about .panfav--n1 {
   position: absolute;
   right: -15%;
@@ -221,12 +297,24 @@ header nav ul li .menu--link:hover {
   color: #FFFFFF;
   transform: rotate(90deg);
 }
+@media only screen and (max-width: 576px) {
+  .about .panfav--n1 {
+    position: static;
+    transform: rotate(0deg);
+  }
+}
 .about .panfav--text {
   width: calc(100% - 441px);
   font-family: "Lato", sans-serif;
   font-style: normal;
   color: #F2F2F2;
   text-align: right;
+}
+@media only screen and (max-width: 576px) {
+  .about .panfav--text {
+    width: 100%;
+    text-align: center;
+  }
 }
 .about .panfav--text h1 {
   text-align: right;
@@ -235,6 +323,12 @@ header nav ul li .menu--link:hover {
   line-height: 36px;
   letter-spacing: 0.15em;
   color: #FFFFFF;
+}
+@media only screen and (max-width: 576px) {
+  .about .panfav--text h1 {
+    width: 100%;
+    text-align: center;
+  }
 }
 .about .panfav--text p {
   font-weight: 400;
@@ -251,11 +345,27 @@ header nav ul li .menu--link:hover {
   background-repeat: no-repeat;
   background-position: bottom center;
 }
+@media only screen and (max-width: 576px) {
+  .about .panfav--image {
+    width: 100%;
+    background-size: 90%;
+    background-position: center center;
+  }
+}
 .about .ksemdm {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+}
+@media only screen and (max-width: 576px) {
+  .about .ksemdm {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
 }
 .about .ksemdm--n2 {
   font-family: "Lato", sans-serif;
@@ -271,12 +381,24 @@ header nav ul li .menu--link:hover {
   top: 50%;
   transform: rotate(270deg);
 }
+@media only screen and (max-width: 576px) {
+  .about .ksemdm--n2 {
+    position: static;
+    transform: rotate(0deg);
+  }
+}
 .about .ksemdm--text {
   width: calc(100% - 544px);
   text-align: left;
   font-family: "Lato", sans-serif;
   font-style: normal;
   color: #F2F2F2;
+}
+@media only screen and (max-width: 576px) {
+  .about .ksemdm--text {
+    width: 100%;
+    text-align: center;
+  }
 }
 .about .ksemdm--text h1 {
   text-align: left;
@@ -285,6 +407,12 @@ header nav ul li .menu--link:hover {
   line-height: 36px;
   letter-spacing: 0.15em;
   color: #FFFFFF;
+}
+@media only screen and (max-width: 576px) {
+  .about .ksemdm--text h1 {
+    width: 100%;
+    text-align: center;
+  }
 }
 .about .ksemdm--text p {
   font-weight: 400;
@@ -300,6 +428,13 @@ header nav ul li .menu--link:hover {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right center;
+}
+@media only screen and (max-width: 576px) {
+  .about .ksemdm--image {
+    order: -2;
+    width: 100%;
+    background-size: 90%;
+  }
 }
 
 .ourWorks--header {
