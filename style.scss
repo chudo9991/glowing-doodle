@@ -60,7 +60,11 @@ header {
                     color: $textcolor;
                     font-family: 'Lato', sans-serif;
                     font-size: 24px; 
-                    text-decoration: none;                                   
+                    text-decoration: none;      
+                    
+                    &:hover {
+                        border-bottom: 1px solid #F2F2F2;
+                    }
                 }               
             }
         }
@@ -202,7 +206,7 @@ header {
             box-shadow: 0px 4px 4px #007A65;
 
             &:hover {
-                background-color: #A68262;
+                background: #C09B6F;
                 box-shadow: 0px 4px 4px #A68262;
             }
         }
@@ -373,6 +377,12 @@ header {
 
         .elem {
             border-radius: 15px;
+            transition: all 0.5s ease;
+            
+            &:hover {
+                grid-area: 1/1/4/4;
+                z-index: 2;
+            }
         }
 
         .one {
@@ -381,9 +391,12 @@ header {
             background-image: url('/images/one.png');
             background-position: center center;
             background-repeat: no-repeat;
+            
 
             &:hover {
                 background-color: #007A65;
+                grid-area: 1/1/4/4;
+                z-index: 2;
             }
         }
 
@@ -412,5 +425,130 @@ header {
                 background-color: #007A65;
             }
         }
+    }
+}
+
+.howTo {
+    h1 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: right;
+        color: #F2F2F2;
+    }
+
+    &--wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &--text {
+        // width: 452px;
+        width: 49%;
+        text-align: left;
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        color: $textcolor;
+
+        h2 {   
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 36px;                
+            letter-spacing: 0.15em;                
+            color: #FFFFFF;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: #FFFFFF;
+            font-family: 'Lato', sans-serif;                
+        }
+    }
+
+    &--form {
+        // width: 490px;
+        width: 49%;
+        height: 338px;
+        background-color: #007A65;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-family: 'Lato', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: #F2F2F2;
+        }
+
+        input[type="text"] {
+            // width: 390px;
+            width: 80%;
+            height: 58px;
+            padding: 20px 35px;
+            background: #F2F2F2;
+            border: 1px solid #E7E7E7;
+            box-sizing: border-box;
+            border-radius: 61px;
+            font-family: 'Lato', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+
+            color: #000;
+            margin: 12px;
+
+            &:focus {
+                outline: 1px solid #A68262;
+            }
+
+            &:placeholder {
+                color: #C5C5C5;
+            }
+        }
+
+        button {
+            width: 80%;
+            height: 58px;
+            background: #A68262;
+            border-radius: 15px;
+            border: none;
+            font-family: 'Lato', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: #FFFFFF;
+            margin: 12px;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--item {
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;
+    }
+    
+    &--social {
+        margin: 33px;
     }
 }
