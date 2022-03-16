@@ -19,7 +19,7 @@ body {
     background-color: $bgcolor;
     color: $textcolor;
     font: $mainfont;
-    background-image: url('/images/bg.png');
+    background-image: url('/images/bg.webp');
     background-position: center top;
     background-repeat: repeat-y;
 }
@@ -386,7 +386,7 @@ header {
         &--image {
             width: 568px;
             height: 375px;
-            background-image: url('/images/mouse_2.png');
+            background-image: url('/images/mouse_2.webp');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: bottom center;
@@ -474,7 +474,7 @@ header {
         &--image {
             width: 544px;
             height: 427px;
-            background-image: url('/images/mouse_1.png');
+            background-image: url('/images/mouse_1.webp');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: right center;
