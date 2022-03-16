@@ -301,6 +301,7 @@ header nav ul li .menu--link:hover {
   .about .panfav--n1 {
     position: static;
     transform: rotate(0deg);
+    font-size: 24px;
   }
 }
 .about .panfav--text {
@@ -385,6 +386,7 @@ header nav ul li .menu--link:hover {
   .about .ksemdm--n2 {
     position: static;
     transform: rotate(0deg);
+    font-size: 24px;
   }
 }
 .about .ksemdm--text {

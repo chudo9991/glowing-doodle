@@ -343,6 +343,7 @@ header {
             @include media("sm") {
                 position: static;
                 transform: rotate(0deg);
+                font-size: 24px;
             }
         }
 
@@ -430,6 +431,7 @@ header {
             @include media("sm") {
                 position: static;
                 transform: rotate(0deg);
+                font-size: 24px;
             }
         }
 
