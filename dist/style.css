@@ -3,13 +3,13 @@ body {
   background-color: #3C3B40;
   color: #F2F2F2;
   font: normal 12px "Lato";
-  background-image: url("images/bg.png");
+  background-image: url("/images/bg.png");
+  background-size: cover;
   background-repeat: repeat-y;
 }
 
 .container {
   width: 1080px;
-  border: 1px solid red;
   margin: 0 auto;
 }
 
@@ -43,4 +43,50 @@ header nav ul li .menu--link {
   font-family: "Lato", sans-serif;
   font-size: 24px;
   text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  padding: 192px 0 64px 0;
+}
+.hero--text {
+  width: 576px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  color: #F2F2F2;
+}
+.hero--text h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  margin-bottom: 39px;
+}
+.hero--text p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+  margin-bottom: 42px;
+}
+.hero--text button {
+  width: 238px;
+  height: 67px;
+  background: #A68262;
+  border-radius: 15px;
+  border: none;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.hero--image {
+  width: 568px;
+  height: 375px;
+  background-image: url("/images/devices.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }

@@ -8,15 +8,18 @@ body {
     background-color: $bgcolor;
     color: $textcolor;
     font: $mainfont;
-    background-image: url('images/bg.png');
+    background-image: url('/images/bg.png');
+    background-size: cover;
     background-repeat: repeat-y;
 }
 
 .container {
     width: $mainwidth;
-    border: 1px solid red;
+    // border: 1px solid red;
     margin: 0 auto;
 }
+
+// Header
 
 header {
     display: flex;
@@ -54,5 +57,56 @@ header {
                 }               
             }
         }
+    }
+}
+
+// Hero
+
+.hero {
+    display: flex;
+    padding: 192px 0 64px 0;
+    &--text {
+        width: 576px;
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        color: $textcolor;
+
+        h1 {   
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 58px;
+            margin-bottom: 39px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: #FFFFFF;
+            margin-bottom: 42px;
+        }
+        button {
+            width: 238px;
+            height: 67px;
+            background: #A68262;
+            border-radius: 15px;
+            border: none;
+            font-family: 'Lato', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+
+    &--image {
+        width: 568px;
+        height: 375px;
+        background-image: url('/images/devices.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
     }
 }
