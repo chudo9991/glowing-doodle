@@ -3,7 +3,7 @@ body {
   background-color: #3C3B40;
   color: #F2F2F2;
   font: normal 12px "Lato";
-  background-image: url("/images/bg.png");
+  background-image: url("images/bg.png");
   background-size: cover;
   background-repeat: repeat-y;
 }
@@ -92,7 +92,7 @@ header nav ul li .menu--link {
 .hero--image {
   width: 568px;
   height: 375px;
-  background-image: url("/images/devices.png");
+  background-image: url("images/devices.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
