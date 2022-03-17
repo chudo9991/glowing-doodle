@@ -16,9 +16,9 @@
             <nav>
                 <ul>
                     <li><a href="#" class="menu--link">Главная</li></a>
-                    <li><a href="#" class="menu--link">Услуги</li></a>
-                    <li><a href="#" class="menu--link">О нас</li></a>
-                    <li><a href="#" class="menu--link">Контакты</li></a>
+                    <li><a href="#services" class="menu--link">Услуги</li></a>
+                    <li><a href="#about" class="menu--link">О нас</li></a>
+                    <li><a href="#connection" class="menu--link">Контакты</li></a>
                     <li><a href="#" class="menu--link">RU</li></a>
                 </ul>
             </nav>
@@ -36,7 +36,7 @@
 
         <div class="line"></div>
 
-        <section class="cardGroup">
+        <section class="cardGroup" id="services">
             <h1>Что мы умеем?</h1>
             <div class="cardGroup--wrapper">
 
@@ -46,7 +46,7 @@
                     <div class="cardGroup--wrapper--inner">
                         <p>Одностраничный<br> рекламный сайт</p>
                         <div class="cardGroup--smallLine"></div>
-                        <button class="cardGroup--button">Подробнее</button>
+                        <button class="cardGroup--button" id="landing">Подробнее</button>
                     </div>
                 </div>
 
@@ -56,7 +56,7 @@
                     <div class="cardGroup--wrapper--inner">
                         <p>Многостраничный сайт</p>
                         <div class="cardGroup--smallLine"></div>
-                        <button class="cardGroup--button">Подробнее</button>
+                        <button class="cardGroup--button" id="site">Подробнее</button>
                     </div>
                 </div>
 
@@ -66,17 +66,48 @@
                     <div class="cardGroup--wrapper--inner">
                         <p>Таргетированная<br>реклама и монетицазия</p>
                         <div class="cardGroup--smallLine"></div>
-                        <button class="cardGroup--button">Подробнее</button>
+                        <button class="cardGroup--button" id="seo">Подробнее</button>
                     </div>
                 </div>
-
             </div>
+
+            <div class="bigCard">
+                <h1>Лендинг</h1>
+                <div class="bigCard--line"></div>
+                <p>
+                    Лендинг - небольшой одностраничный сайт, чаще всего 
+                    использующийся в рекламных целях. Лучше всего подходит
+                    для представления собственной компании или бренда.
+                </p>
+                <ul>
+                    Для вас мы можем:
+                    <ul>
+                        <li>создать логотип и дизайн-макет лендинга</li>
+                        <li>разработать кроссплатформенную структуру сайта</li>
+                        <li>разработать сам сайт и выложить его на хостинг</li>
+                        <li>осуществлять дальнейшую техническую поддержку</li>
+                    </ul>
+                </ul>
+                <div class="bigCard--wrapper">
+                    <div class="bigCard--wrapper--image"></div>
+                    <div class="bigCard--wrapper--text">
+                        <p>
+                            Цена вопроса
+                        </p>
+                        <p>
+                            от 10&nbsp;000&nbsp;&#8381;
+                        </p>
+                        <button>Оставить заявку</button>
+                    </div>
+                </div>
+            </div>
+
         
         </section>
         
         <div class="line"></div>
 
-        <section class="about">
+        <section class="about" id="about">
             <h1>Кто мы такие?</h1>
             <p>Мы - два айтишника-кофемана из  Петрозаводска.<br>Давайте знакомиться!</p>
             <div class="panfav">
@@ -131,7 +162,7 @@
 
         <div class="line"></div>
 
-        <section class="howTo">
+        <section class="howTo" id="connection">
             <h1>Как с нами связаться?</h1>
             <div class="howTo--wrapper">
                 <div class="howTo--text">
@@ -162,4 +193,5 @@
             </div>
         </div>        
     </footer>
+<script src="script.js"></script>
 </body>

@@ -6,6 +6,7 @@ body {
   background-image: url("/images/bg.webp");
   background-position: center top;
   background-repeat: repeat-y;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -158,6 +159,9 @@ header nav ul li .menu--link:hover {
   }
 }
 
+.cardGroup {
+  position: relative;
+}
 .cardGroup h1 {
   text-align: right;
   font-family: "Lato", sans-serif;
@@ -250,6 +254,33 @@ header nav ul li .menu--link:hover {
   height: 1px;
   background-color: #A68262;
   margin-bottom: 20px;
+}
+.cardGroup .bigCard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 700px;
+  background-color: #A68262;
+  border-radius: 15px;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+}
+.cardGroup .bigCard h1 {
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 43px;
+  color: #F2F2F2;
+}
+.cardGroup .bigCard--line {
+  width: 90%;
+  height: 1px;
+  background-color: #A68262;
+  margin-top: 7px;
+  margin-bottom: 24px;
 }
 
 .about h1 {
