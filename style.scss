@@ -27,7 +27,7 @@ body {
 
 .container {
     width: $mainwidth;
-    // border: 1px solid red;
+    border: 1px solid red;
     margin: 0 auto;
 
     @include media("sm") {
@@ -294,12 +294,17 @@ header {
     }
 
     .bigCard {
+        display: none;
+
+        // display: flex;
+        flex-direction: column;
+        justify-content: center;
+
         position: absolute;
         top: 0;
         left: 0;
         z-index: 3;
-        
-        width: 100%;
+                       
         height: 100%;
         padding: 40px 50px;
         
@@ -317,7 +322,8 @@ header {
         h1 {
             text-align: left;
             font-size: 36px;
-            line-height: 43px;                        
+            line-height: 43px;
+            margin: 0;                        
         }
     
         &--line {
@@ -333,7 +339,41 @@ header {
         }
 
         &--wrapper {
-            
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 200px;
+
+            &--image {
+                width: 248px;
+                height: 242px;
+                background-image: url('/images/landingPic.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            &--text {
+                text-align: right;
+
+                p:nth-child(2) {
+                    font-weight: 900;
+                    font-size: 48px;
+                    line-height: 58px;
+                }
+            }
+
+            button {
+                width: 238px;
+                height: 59px;
+                background: #C09B6F;
+                border-radius: 15px;
+                border: none;
+                font-size: 24px;
+                line-height: 29px;
+                text-align: center;
+                color: #FFFFFF;
+            }
         }
     }
 }
