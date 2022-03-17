@@ -5,6 +5,11 @@ $mainwidth: 1200px;
 $mainfont: normal 12px 'Lato';
 $sizes: ("sm":576px, "md":768px, "lg":992px, "xl":1200px);
 
+@keyframes appear {
+    0% {opacity: 1;}
+    0% {opacity: 0;}
+}
+
 @mixin media($media) {
     @each $size, $resolution in $sizes {
       @if $media == $size {
@@ -27,7 +32,7 @@ body {
 
 .container {
     width: $mainwidth;
-    border: 1px solid red;
+    // border: 1px solid red;
     margin: 0 auto;
 
     @include media("sm") {
