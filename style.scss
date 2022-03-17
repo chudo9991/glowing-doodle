@@ -347,7 +347,25 @@ header {
             &--image {
                 width: 248px;
                 height: 242px;
-                background-image: url('/images/landingPic.png');
+                background-image: url('/images/landingPic.svg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            &--image2 {
+                width: 352px;
+                height: 236px;
+                background-image: url('/images/sitePic.svg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            &--image3 {
+                width: 346px;
+                height: 310px;
+                background-image: url('/images/targetPic.svg');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;

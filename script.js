@@ -1,5 +1,7 @@
 let wrapper = document.querySelector('.cardGroup--wrapper');
 let landing = document.querySelector('#bigCard--landing');
+let site = document.querySelector('#bigCard--site');
+let targetSEO = document.querySelector('#bigCard--target');
 
 wrapper.addEventListener('click', (e) => {
     const  { target } = e;
@@ -12,9 +14,17 @@ wrapper.addEventListener('click', (e) => {
             })
             
         } else if (target.matches('#site')) {
-            console.log('site');
-        } else if (target.matches('#seo')) {
+            // console.log('site');
+            site.style.display = "flex";
+            site.addEventListener("click", () => {
+                site.style.display = "none";
+            })
+        } else if (target.matches('#target')) {
             console.log('seo');
+            targetSEO.style.display = "flex";
+            targetSEO.addEventListener("click", () => {
+                targetSEO.style.display = "none";
+            })
         };        
     };
 });
