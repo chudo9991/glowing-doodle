@@ -1,4 +1,13 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
+@keyframes appear {
+  0% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}
 body {
   background-color: #3C3B40;
   color: #F2F2F2;
@@ -11,7 +20,6 @@ body {
 
 .container {
   width: 1200px;
-  border: 1px solid red;
   margin: 0 auto;
 }
 @media only screen and (max-width: 576px) {
@@ -257,7 +265,7 @@ header nav ul li .menu--link:hover {
   margin-bottom: 20px;
 }
 .cardGroup .bigCard {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   position: absolute;
@@ -280,6 +288,7 @@ header nav ul li .menu--link:hover {
   text-align: left;
   font-size: 36px;
   line-height: 43px;
+  margin: 0;
 }
 .cardGroup .bigCard--line {
   width: 90%;
@@ -300,10 +309,45 @@ header nav ul li .menu--link:hover {
 .cardGroup .bigCard--wrapper--image {
   width: 248px;
   height: 242px;
-  background-image: url("/images/landingPic.png");
+  background-image: url("/images/landingPic.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+.cardGroup .bigCard--wrapper--image2 {
+  width: 352px;
+  height: 236px;
+  background-image: url("/images/sitePic.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.cardGroup .bigCard--wrapper--image3 {
+  width: 346px;
+  height: 310px;
+  background-image: url("/images/targetPic.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.cardGroup .bigCard--wrapper--text {
+  text-align: right;
+}
+.cardGroup .bigCard--wrapper--text p:nth-child(2) {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+}
+.cardGroup .bigCard--wrapper button {
+  width: 238px;
+  height: 59px;
+  background: #C09B6F;
+  border-radius: 15px;
+  border: none;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .about h1 {
@@ -493,6 +537,9 @@ header nav ul li .menu--link:hover {
   }
 }
 
+.ourWorks {
+  position: relative;
+}
 .ourWorks--header {
   font-family: "Lato", sans-serif;
   font-style: normal;
@@ -566,7 +613,39 @@ header nav ul li .menu--link:hover {
 .ourWorks--grid .three:hover {
   background-color: #007A65;
 }
-
+.ourWorks--bigСard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: 100%;
+  padding: 40px 50px;
+  background-color: #A68262;
+  border-radius: 15px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  color: #F2F2F2;
+  text-align: left;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+.ourWorks--bigСard h1 {
+  text-align: left;
+  font-size: 36px;
+  line-height: 43px;
+  margin: 0;
+}
+.ourWorks--bigСard--line {
+  width: 90%;
+  height: 1px;
+  background-color: #F2F2F2;
+  margin-top: 7px;
+  margin-bottom: 24px;
+}
 .howTo h1 {
   font-family: "Lato", sans-serif;
   font-weight: 700;

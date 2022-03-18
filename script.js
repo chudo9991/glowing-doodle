@@ -33,3 +33,27 @@ wrapper.addEventListener('click', (e) => {
         };        
     };
 });
+
+let ourWorks = document.querySelector('.ourWorks');
+
+ourWorks.addEventListener('click', (e) => {
+    const  { target } = e;
+    if (target.matches('.ourWorks')) {
+        if (target.matches('.two')) {
+            // landing.style.display = "flex";
+            // landing.style.animation = "appear 0.7s 1 ease-out";
+            console.log('two!');
+            
+        }
+    }
+});
+
+let one = document.querySelector('.one');
+let work1 = document.querySelector('.ourWorks--bigСard');
+one.addEventListener('click', ()=>{
+    work1.style.display = "flex";
+    work1.style.animation = "appear 0.7s 1 ease-out";
+});
+work1.addEventListener('click', ()=>{
+    work1.style.display = "none";
+});
