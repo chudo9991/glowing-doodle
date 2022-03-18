@@ -330,6 +330,10 @@ header {
             line-height: 43px;
             margin: 0;                        
         }
+
+        &--text {
+            width: 90%;
+        }
     
         &--line {
             width: 90%;
@@ -347,7 +351,7 @@ header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0 200px;
+            padding: 0 100px;
 
             &--image {
                 width: 248px;
@@ -734,19 +738,19 @@ header {
             color: #FFFFFF;
         }
         
+        &--ex1 {
+            background-image: url('/images/mockup2.svg');
+        }
+    
+        &--ex2 {
+            background-image: url('/images/mockup1.svg');
+        }
+    
+        &--ex3 {
+            background-image: url('/images/mockup3.svg');
+        }
     }
 
-    .ex1 {
-        background-image: url('/images/mockup1.svg');
-    }
-
-    .ex2 {
-        background-image: url('/images/mockup2.svg');
-    }
-
-    .ex3 {
-        background-image: url('/images/mockup3.svg');
-    }
 }
 
 .howTo {

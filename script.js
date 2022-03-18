@@ -34,26 +34,29 @@ wrapper.addEventListener('click', (e) => {
     };
 });
 
-let ourWorks = document.querySelector('.ourWorks');
-
-ourWorks.addEventListener('click', (e) => {
-    const  { target } = e;
-    if (target.matches('.ourWorks')) {
-        if (target.matches('.two')) {
-            // landing.style.display = "flex";
-            // landing.style.animation = "appear 0.7s 1 ease-out";
-            console.log('two!');
-            
-        }
-    }
-});
-
 let one = document.querySelector('.one');
-let work1 = document.querySelector('.ourWorks--bigСard');
+let card = document.querySelector('.ourWorks--bigСard--ex1');
 one.addEventListener('click', ()=>{
-    work1.style.display = "flex";
-    work1.style.animation = "appear 0.7s 1 ease-out";
+    card.style.display = "flex";
 });
-work1.addEventListener('click', ()=>{
-    work1.style.display = "none";
+card.addEventListener('click', ()=>{
+    card.style.display = "none";
+});
+
+let two = document.querySelector('.two');
+let card2 = document.querySelector('.ourWorks--bigСard--ex2');
+two.addEventListener('click', ()=>{
+    card2.style.display = "flex";
+});
+card2.addEventListener('click', ()=>{
+    card2.style.display = "none";
+});
+
+let three = document.querySelector('.three');
+let card3 = document.querySelector('.ourWorks--bigСard--ex3');
+three.addEventListener('click', ()=>{
+    card3.style.display = "flex";
+});
+card3.addEventListener('click', ()=>{
+    card3.style.display = "none";
 });
