@@ -60,3 +60,13 @@ three.addEventListener('click', ()=>{
 card3.addEventListener('click', ()=>{
     card3.style.display = "none";
 });
+
+if (window.matchMedia("(max-width: 576px)").matches) {
+    // Viewport is less or equal to 700 pixels wide
+    document.querySelector('.cardGroup--wrapper').style.display = "none";
+    document.querySelector('.slider').style.display = "flex";
+  } else {
+    // Viewport is greater than 700 pixels wide
+    document.querySelector('.cardGroup--wrapper').style.display = "flex";
+    document.querySelector('.slider').style.display = "none";
+  }
