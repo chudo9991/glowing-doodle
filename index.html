@@ -19,7 +19,8 @@
     <meta property="og:url" content="http://tetha.ru/wildflex/">
     <meta property="og:site_name" content="WildFlex | Сайты и продвижение">
 
-    <link rel="stylesheet" href="slider/simple-adaptive-slider.min.css">
+    <!-- <link rel="stylesheet" href="slider/simple-adaptive-slider.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" href="style.min.css">
     <title>WildFlex | Сайты и продвижение</title>
 </head>
@@ -185,8 +186,8 @@
 
             <!-- Этот слайдер есть только на мобильных -->
             <div class="slider">
-                <div class="slider__wrapper">
-                  <div class="slider__items">
+                <!-- <div class="slider__wrapper"> -->
+                  <!-- <div class="slider__items"> -->
             
                     <div class="slider__item">
                         <div class="cardGroup--card">
@@ -224,8 +225,8 @@
                         </div>
                     </div>
             
-                  </div>
-                </div>
+                  <!-- </div>
+                </div> -->
         </section>
         
         <div class="line"></div>
@@ -338,8 +339,10 @@
             </div>
         </div>        
     </footer>
-    <script src="slider/simple-adaptive-slider.min.js"></script>
-    <script>
+    <!-- <script src="slider/simple-adaptive-slider.min.js"></script> -->
+    <script src="slick/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function () {
         // инициализация слайдера
             new SimpleAdaptiveSlider('.slider', {
@@ -348,6 +351,28 @@
                 interval: 2000,
                 swipe: true,
             });
+        });
+    </script> -->
+
+    <script>
+         $('.slider').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            arrows: false,
+            variableWidth: true,
+            responsive: [
+
+                {
+                    breakpoint: 576,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        // centerPadding: '2vw',
+                        slidesToShow: 1
+                    }
+                }
+            ]
         });
     </script>
     <script src="script.js"></script>
