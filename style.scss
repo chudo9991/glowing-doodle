@@ -26,12 +26,8 @@ html {
 
     @include media("sm") {
         width: 100%;
-    }
-}
-
-section {
-    @include media("sm") {
-        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -53,7 +49,11 @@ body {
     margin: 0 auto;
 
     @include media("sm") {
-        width: 100%;
+        width: calc(100% - 24px);
+        margin-right: auto;
+        margin-left: auto;
+        // padding-left: px;
+        // padding-right: 8px;
     }
 }
 
